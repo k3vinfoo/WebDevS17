@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model 101</title>
+    <!-- Based on the classes we have applied to our container and thumbnail divs, today we will explore how margins, padding, and borders effect the dimensions of our block level elements in both pixel and percentage based grid systems. -->
+    <style type="text/css">
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #777777;
+        font-style: italic;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+    }
+    /* Use a tag selector to add a transparent backgrounf to all divs on our page so we can see them. */
+    
+    div {
+        background-color: rgba(0, 0, 200, 0.2);
+    }
+    /* Fixed width container and grid using pixels */
+    
+    .container {
+        /* starter width in pixels, divs display block by default */
+        width: 900px;
+        margin: 0px auto;
+        /* padding adds to the width dimension of our element. our 900px container now takes up 940px of the screen */
+        padding: 20px;
+    }
+    
+    .thumbnail {
+        width: 300px;
+        height: 300px;
+        float: left;
+    }
+    /* How to clear-fix aka avoid collapsed paren element when floating child elements */
+    /* Solution 1 -  add an element after our last floated element with clear both and no height - This is less good! we are using HTML (content) to control our presentation which should be handled by CSS alone */
+    
+    .clear {
+        clear: both;
+    }
+    /* Solution 2- Using CSS alone and a clearfix class which we apply to any element who has floating children */
+    
+    .clear-fix::after {
+        content: '';
+        display: block;
+        clear: both;
+        /* for backwards compatibility */
+        height: 0;
+        font-size: 0;
+        /* extra backup */
+        visibility: hidden;
+    }
+    /* fluid layouts using % */
+    
+    .container-fluid {
+        background-color: rgba(0, 100, 150, 0.2);
+        width: 90%;
+        /* padding 2% padding will result in a 94% wide container */
+        padding: 2%;
+        margin: 0 auto;
+    }
+    
+    .thumbnail-fluid {
+        width: 25%;
+        margin: 0 1%;
+        /* 25% - 2*1% */
+        width: 23%;
+        height: 300px;
+        float: left;
+    }
+    /* More Math to Modify Our Pixel based layout to account for Borders */
+    
+    .thumbnail-border {
+        width: 300px;
+        height: 300px;
+        float: left;
+        border-style: solid;
+        border-width: 5px;
+        border-color: red;
+        border: 10px dashed grey;
+        /* 300px - 2*10px */
+        width: 280px;
+        /* alternative if we want to grow our container to accomodate: 
+            (300px + 2*10px)*3 container needs to grow to 960px
+             */
+    }
+    /* More Math to Modify Our Pixel based layout to account for Borders and Padding */
+    
+    .thumbnail-border-padding {
+        width: 300px;
+        height: 300px;
+        float: left;
+        border: 2px solid red;
+        width: 296px;
+        padding: 10px;
+        width: 276px;
+        margin: 0 10px;
+        width: 256px;
+    }
+    
+    #justified {
+        text-align: justify;
+        border-color: green;
+        width: 236px;
+        padding: 10px 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Notice our heading are block elements too -->
+    <h1>Box Model, Basic Layouts, Positioning</h1>
+    <h2>Fixed Pixel Based Layout Using Floats and Clear Both Element</h2>
+    <div class="container">
+        <div class="thumbnail"></div>
+        <div class="thumbnail"></div>
+        <div class="thumbnail"></div>
+        <br class="clear">
+    </div>
+    <h2>Fixed Pixel Based Layout Using Floats and ClearFix Class</h2>
+    <div class="container clear-fix">
+        <div class="thumbnail"></div>
+        <div class="thumbnail"></div>
+        <div class="thumbnail"></div>
+    </div>
+    <hr>
+    <h2>Fluid Percentage Based Layout Using Floats</h2>
+    <div class="container-fluid clear-fix">
+        <div class="thumbnail-fluid"></div>
+        <div class="thumbnail-fluid"></div>
+        <div class="thumbnail-fluid"></div>
+        <div class="thumbnail-fluid"></div>
+    </div>
+    <h2>Fixed Container with Fluid Thumbnails Within</h2>
+    <!-- Notice how our % based thumbnails just figured out thier final dimension based on a fixed container -->
+    <div class="container clear-fix">
+        <div class="thumbnail-fluid"></div>
+        <div class="thumbnail-fluid"></div>
+        <div class="thumbnail-fluid"></div>
+        <div class="thumbnail-fluid"></div>
+    </div>
+    <hr>
+    <h3>More Math to Modify Our Pixel based layout to account for Borders</h3>
+    <div class="container clear-fix">
+        <div class="thumbnail-border"></div>
+        <div class="thumbnail-border"></div>
+        <div class="thumbnail-border"></div>
+    </div>
+    <h3>More Math to Modify Our Pixel based layout to account for Borders and Padding</h3>
+    <div class="container clear-fix">
+        <div class="thumbnail-border-padding" id="justified">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit sit amet purus at iaculis. Morbi lorem metus, facilisis fermentum metus id, tincidunt ullamcorper augue. Cras tortor dolor, varius ac mi eu, mattis sodales sapien. Proin faucibus pellentesque dignissim. </div>
+        <div class="thumbnail-border-padding">Fusce euismod nisl at dui venenatis, a fermentum quam tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut nec velit nec tortor eleifend pretium.</div>
+        <div class="thumbnail-border-padding">
+            Vestibulum id urna facilisis, aliquam lacus eget, euismod lorem. Proin et sollicitudin purus. Sed euismod erat a posuere viverra. Aliquam interdum dolor a risus scelerisque fermentum eget congue nulla. Duis in lectus.
+        </div>
+    </div>
+    <hr>
+    <h3>In Class Exercise</h3>
+    <div class="container-inclass clear-fix">
+        <div class="thumbnail-inclass"></div>
+        <div class="thumbnail-inclass"></div>
+        <div class="thumbnail-inclass"></div>
+    </div>
+</body>
+
+</html>
