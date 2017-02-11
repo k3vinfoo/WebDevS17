@@ -7,10 +7,23 @@
     <style type: text/css>
     * {
         font-family: "Helvetica Neue", Arial;
+        margin: 0;
+        padding: 0;
     }
     
-    h1 {
+    header {
+        background-color: #999;
+        width: 100%;
+        height: 100px;
+    }
+    
+    header h1 {
+        padding: 0 30px;
         color: #0361A6;
+        line-height: 100px;
+        max-width: 20%;
+        display: inline-block;
+        overflow: hidden;
     }
     
     h2,
@@ -18,9 +31,56 @@
         color: #1C8ADC;
     }
     
+    header nav {
+        display: inline-block;
+        float: right;
+        height: 100px;
+        overflow: hidden;
+        padding: 0 30px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 100px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto -1px;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0 10px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #1C8ADC
+    }
+    
+    main {
+        padding-top: 23px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
     .ingredients,
     .cooking-directions {
         background-color: rgba(157, 203, 237, 0.3);
+    }
+    
+    main aside .ingredients {
+        display: inline-block;
+        margin: 0 2%;
+        width: 20%;
+        border: 2px solid blue;
+    }
+    
+    main .cooking-directions {
+        width: 60%;
     }
     </style>
 </head>
@@ -31,22 +91,21 @@
         <nav>
             <ul>
                 <li><a href="#">Recipes</a>
-                    <ul>
-                        <li>
-                            <a href="#">Quick and Easy</a></li>
-                        <li>
-                            <a href="#">Valentine's Day</a></li>
-                        <li>
-                            <a href="#">Healthy Eating</a></li>
-                        <li>
-                            <a href="#">Holidays and Parties</a></li>
-                        <li>
-                            <a href="#">Craveworthy Eats</a></li>
-                    </ul>
+                    <!-- <ul>
+    <li>
+        <a href="#">Quick and Easy</a></li>
+    <li>
+        <a href="#">Valentine's Day</a></li>
+    <li>
+        <a href="#">Healthy Eating</a></li>
+    <li>
+        <a href="#">Holidays and Parties</a></li>
+    <li>
+        <a href="#">Craveworthy Eats</a></li>
+</ul>
+ -->
                 </li>
-                <li><a href="#">About Us</a></li>
-                <ul>
-                    <li><a href="#">Our Love For Bananas</a></ul>
+                <li><a href="#">Our Love for Bananas</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <nav>
@@ -57,23 +116,27 @@
             <h2>A Real Pie: Pizza Rustica</h2>
         </div>
         <figure>
-            <div class="img-container">
-                <!-- <img src="http://placehold.it/700x500"> -->
-                <img src="http://media2.s-nbcnews.com/j/newscms/2016_12/1024206/01_pizza_rustica_ce850faae3ddc5e630c9a489e139b99c.today-inline-large.jpg" title="Pizza Rustica">
-            </div>
-            <figcaption><em>A completed pizza rustica.</em></figcaption>
+            <div class="same-cont">
+                <div class="img-container">
+                    <!-- <img src="http://placehold.it/700x500"> -->
+                    <img src="http://media2.s-nbcnews.com/j/newscms/2016_12/1024206/01_pizza_rustica_ce850faae3ddc5e630c9a489e139b99c.today-inline-large.jpg" title="Pizza Rustica">
+                </div>
+                <figcaption><em>A completed pizza rustica.</em></figcaption>
         </figure>
         <div class="ingredients">
-            <h3> Ingredients </h3>
-            <ul>
-                <li>2 1/2 cups all-purpose flour</li>
-                <li>1/2 cup butter, cubed</li>
-                <li>2 eggs and 1 yolk, plus 2 eggs, beaten</li>
-                <li>Pinch salt</li>
-                <li>1/2 pound cooked ham, chopped</li>
-                <li>3/4 pound smoked mozzarella, thinly sliced</li>
-                <li>1/4 cup freshly grated Parmigiano-Reggiano</li>
-            </ul>
+            <aside>
+                <h3> Ingredients </h3>
+                <ul>
+                    <li>2 1/2 cups all-purpose flour</li>
+                    <li>1/2 cup butter, cubed</li>
+                    <li>2 eggs and 1 yolk, plus 2 eggs, beaten</li>
+                    <li>Pinch salt</li>
+                    <li>1/2 pound cooked ham, chopped</li>
+                    <li>3/4 pound smoked mozzarella, thinly sliced</li>
+                    <li>1/4 cup freshly grated Parmigiano-Reggiano</li>
+                </ul>
+            </aside>
+        </div>
         </div>
         <div class="cooking-directions">
             <h3>Cooking Directions</h3>
