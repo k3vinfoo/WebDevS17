@@ -19,11 +19,16 @@
     
     header h1 {
         padding: 0 30px;
-        color: #0361A6;
+        /*color: #0361A6;*/
         line-height: 100px;
         max-width: 20%;
         display: inline-block;
         overflow: hidden;
+    }
+    
+    header h1 a {
+        text-decoration: none;
+        color: #0361A6;
     }
     
     body .recipe-title h1,
@@ -95,6 +100,7 @@
         display: inline-block;
         float: right;
         width: 40%;
+        height: 467px;
         padding: 0 auto;
     }
     
@@ -104,7 +110,7 @@
     }
     
     .ingredients aside ul li {
-        line-height: 58px;
+        line-height: 55px;
         font-size: 18px;
         list-style-type: none;
     }
@@ -121,27 +127,44 @@
         height: 525px;
     }
     
+    main .cooking-cont {
+        height: 350px;
+    }
+    
     main .cooking-directions {
         float: 0 auto;
+        display: inline-block;
     }
     
     main .cooking-directions p {
         line-height: 40px;
     }
     
-    .footer {
-        border: 5px solid orange;
-        padding-left: 50px;
+    footer {
+        color: white;
         width: 100%;
-        height: 40%;
-        float: right;
+        background-color: #9AC9E9;
+    }
+    
+    footer .copyright {
+        text-align: center;
+    }
+    
+    footer .footer-socialmedia span {
+        margin: 0 675px;
+    }
+    
+    .footer {
+        line-height: 50px;
+        width: 100%;
+        float: 0 auto;
     }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>The Blue Banana</h1>
+        <h1><a href="recipe.html">The Blue Banana</a></h1>
         <nav>
             <ul>
                 <li><a href="#">Recipes</a>
@@ -177,7 +200,7 @@
                         <li><span>2 1/2 </span>cups all-purpose flour</li>
                         <li><span>1/2 </span>cup butter, cubed</li>
                         <li><span>2</span> eggs and <span>1</span> yolk, plus <span>2</span> eggs, beaten</li>
-                        <li>Pinch salt</li>
+                        <li><span>Pinch</span> salt</li>
                         <li><span>1/2</span> pound cooked ham, chopped</li>
                         <li><span>3/4</span> pound smoked mozzarella, thinly sliced</li>
                         <li><span>1/4</span> cup freshly grated Parmigiano-Reggiano</li>
@@ -185,31 +208,34 @@
                 </aside>
             </div>
         </div>
-        <div class="cooking-directions">
-            <h3>Cooking Directions</h3>
-            <p> Preheat the oven to 425 degrees F.</p>
-            <p>Pile all the flour on a clean work surface and make a well in the center. In the center of the well, place the butter, 2 eggs, egg yolk, and pinch of salt. Knead all ingredients together to form a smooth, soft ball of dough. Divide the dough into 2 pieces, 1 slightly larger than the other. Roll the larger piece out until it is large enough to line the bottom of an 11-inch tart pan. Prick it with a fork all over, then roll out the second piece of dough to approximately the same size as the first; it will be smaller but should fit over the tart pan like a lid.</p>
-            <p>Distribute the ham evenly over the bottom layer of dough. Top with the mozzarella, then add the beaten eggs, reserving 1 to 2 tablespoons, for brushing the top of the pastry. Top with Parmigiano-Reggiano and fit the "lid" over the top, sealing the edges all the way around with finger pressure.</p>
-            <p>Brush the top with the reserved egg and bake until golden brown, about 30 minutes. Let rest 10 minutes before slicing into wedges and serving like pizza.</p>
+        <div class="cooking-cont">
+            <div class="cooking-directions">
+                <h3>Cooking Directions</h3>
+                <p> Preheat the oven to 425 degrees F.</p>
+                <p>Pile all the flour on a clean work surface and make a well in the center. In the center of the well, place the butter, 2 eggs, egg yolk, and pinch of salt. Knead all ingredients together to form a smooth, soft ball of dough. Divide the dough into 2 pieces, 1 slightly larger than the other. Roll the larger piece out until it is large enough to line the bottom of an 11-inch tart pan. Prick it with a fork all over, then roll out the second piece of dough to approximately the same size as the first; it will be smaller but should fit over the tart pan like a lid.</p>
+                <p>Distribute the ham evenly over the bottom layer of dough. Top with the mozzarella, then add the beaten eggs, reserving 1 to 2 tablespoons, for brushing the top of the pastry. Top with Parmigiano-Reggiano and fit the "lid" over the top, sealing the edges all the way around with finger pressure.</p>
+                <p>Brush the top with the reserved egg and bake until golden brown, about 30 minutes. Let rest 10 minutes before slicing into wedges and serving like pizza.</p>
+            </div>
         </div>
     </main>
-    <div class="footer">
-        <footer>
-            <span>&copy; The Blue Banana 2017</span>
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <span>&copy; The Blue Banana 2017</span>
+            </div>
             <div class="footer-socialmedia">
                 <span>
                 <a href="https://www.facebook.com" target="_blank">
                 <img src="https://images.seeklogo.net/2016/09/facebook-icon-preview-1.png" width="30px"></a>
-                </a>
                 <a href="https://www.twitter.com" target="_blank">
                 <img src="http://www.clipartkid.com/images/856/new-twitter-logo-vector-eps-free-graphics-download-C44755-clipart.png" width="27px"></a>
-                </a>
+                
                 <a href="https://www.instagram.com" target= "_blank">
                 <img src="https://images.seeklogo.net/2016/06/Instagram-logo.png" width="30px"></a>
             </span>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
