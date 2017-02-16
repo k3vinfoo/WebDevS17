@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Blue Banana</title>
+    <meta name="author" content="Kevin Foo">
+    <style type: text/css>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* START OF HEADER CSS*/
+    
+    header {
+        background-color: #9AC9E9;
+        width: 100%;
+        height: 100px;
+    }
+    
+    header h1 {
+        display: block;
+        padding: 0 30px;
+        /*color: #0361A6;*/
+        line-height: 100px;
+        min-width: 7em;
+        max-height: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+    
+    header h1 a {
+        text-decoration: none;
+        color: #0361A6;
+    }
+    
+    header .nav-bar {
+        background-color: #9AC9E9;
+        float: right;
+        height: 100px;
+        width: 409px;
+        display: inline-block;
+        border-radius: .75em;
+    }
+    
+    header nav {
+        position: absolute;
+        display: inline-block;
+        float: right;
+        height: 100px;
+        overflow: hidden;
+        padding: 0 30px;
+    }
+    
+    header .nav-items {
+        /*margin: 0 auto;*/
+        /*background-color: green;*/
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 100px;
+        font-size: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto -1px;
+        font-size: 16px;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0 10px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #1C8ADC
+    }
+    /* END OF HEADER CSS*/
+    
+    body {
+        font-family: "Helvetica Neue", Arial;
+    }
+    
+    body .recipe-title h1,
+    h2 {
+        color: #1C8ADC;
+    }
+    
+    main {
+        padding-top: 23px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* --------------------------------- */
+    
+    main .credit {
+        color: #47ABE0;
+        padding: 0 0 30px;
+    }
+    
+    main .credit a {
+        color: #096190;
+        text-decoration: none;
+    }
+    
+    main .credit a:hover {
+        text-decoration: underline;
+    }
+    /* --------------------------------- */
+    
+    .same-cont {
+        /*background-color: #999;*/
+        width: 100%;
+        /*        width: 1347.81px;
+*/
+        height: 450px;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    
+    .img-container {
+        width: 50%;
+        margin: 0 1%;
+        width: 48%;
+        height: 450px;
+        float: left;
+    }
+    
+    figure img {
+        max-width: 100%;
+        height: auto;
+        float: left;
+        display: inline-block;
+    }
+    
+    .ingredients,
+    .cooking-directions {
+        background-color: rgba(157, 203, 237, 0.3);
+    }
+    
+    main .ingredients {
+        width: 50%;
+        margin: 0 1%;
+        width: 48%;
+        min-width: 45%;
+        float: right;
+        height: 415px;
+        overflow: scroll;
+    }
+    
+    .ingredients h2 {
+        padding: 1em;
+    }
+    
+    .ingredients aside ul {
+        list-style: inside;
+        padding: 0 60px;
+        /* position: absolute; overflow: auto;
+*/
+    }
+    
+    .ingredients aside ul li {
+        line-height: 2.0;
+        font-size: 18px;
+        list-style-type: none;
+        word-wrap: break-word;
+    }
+    
+    .ingredients aside ul li span {
+        color: #084A81;
+        font-weight: bold;
+    }
+    /* --------------------------------- */
+    
+    .cooking-cont {
+        width: 100%;
+        margin: 0 1%;
+        padding: 10px 10px;
+    }
+    
+    .cooking-directions h2 {
+        padding: 1em;
+    }
+    
+    main .cooking-directions {
+        float: 0 auto;
+        display: inline-block;
+    }
+    
+    main .cooking-directions p {
+        line-height: 40px;
+    }
+    
+    .instructions {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 3em;
+    }
+    /* --------------------------------- */
+    /* FOOTER STYLES */
+    
+    footer {
+        color: white;
+        width: 100%;
+        background-color: #9AC9E9;
+    }
+    
+    footer .copyright {
+        text-align: center;
+    }
+    
+    footer .footer-socialmedia span {
+        margin: 0 47%;
+    }
+    
+    .footer {
+        line-height: 50px;
+        width: 100%;
+        float: 0 auto;
+    }
+    /* END OF FOOTER STYLES */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="recipe.html">The Blue Banana</a></h1>
+        <div class="nav-bar">
+            <nav>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="#">Recipes</a>
+                        </li>
+                        <li><a href="#">Our Love for Bananas</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="recipe-title">
+            <h1>A Real Pie: Pizza Rustica</h1>
+        </div>
+        <div class="credit">
+            <h4>Recipe by <a href="https://en.wikipedia.org/wiki/Mario_Batali">Mario Batali</a></h4>
+        </div>
+        <div class="rate-reviews"></div>
+        <div class="same-cont">
+            <div class="img-container">
+                <figure>
+                    <img src="http://media2.s-nbcnews.com/j/newscms/2016_12/1024206/01_pizza_rustica_ce850faae3ddc5e630c9a489e139b99c.today-inline-large.jpg" alt="Pizza Rustica" title="Pizza Rustica">
+                </figure>
+            </div>
+            <div class="ingredients">
+                <aside>
+                    <h2> Ingredients </h2>
+                    <ul>
+                        <li><span>2 1/2 </span>cups all-purpose flour</li>
+                        <li><span>1/2 </span>cup butter, cubed</li>
+                        <li><span>2</span> eggs and <span>1</span> yolk, plus <span>2</span> eggs, beaten</li>
+                        <li><span>Pinch</span> salt</li>
+                        <li><span>1/2</span> pound cooked ham, chopped</li>
+                        <li><span>3/4</span> pound smoked mozzarella, thinly sliced</li>
+                        <li><span>1/4</span> cup freshly grated Parmigiano-Reggiano</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="cooking-cont">
+            <div class="cooking-directions">
+                <h2>Cooking Directions</h2>
+                <div class="instructions">
+                    <p> Preheat the oven to 425 degrees F.</p>
+                    <p>Pile all the flour on a clean work surface and make a well in the center. In the center of the well, place the butter, 2 eggs, egg yolk, and pinch of salt. Knead all ingredients together to form a smooth, soft ball of dough. Divide the dough into 2 pieces, 1 slightly larger than the other. Roll the larger piece out until it is large enough to line the bottom of an 11-inch tart pan. Prick it with a fork all over, then roll out the second piece of dough to approximately the same size as the first; it will be smaller but should fit over the tart pan like a lid.</p>
+                    <p>Distribute the ham evenly over the bottom layer of dough. Top with the mozzarella, then add the beaten eggs, reserving 1 to 2 tablespoons, for brushing the top of the pastry. Top with Parmigiano-Reggiano and fit the "lid" over the top, sealing the edges all the way around with finger pressure.</p>
+                    <p>Brush the top with the reserved egg and bake until golden brown, about 30 minutes. Let rest 10 minutes before slicing into wedges and serving like pizza.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <span>&copy; The Blue Banana 2017</span>
+            </div>
+            <div class="footer-socialmedia">
+                <span>
+                <a href="https://www.facebook.com" target="_blank">
+                <img src="https://images.seeklogo.net/2016/09/facebook-icon-preview-1.png" width="30px"></a>
+                <a href="https://www.twitter.com" target="_blank">
+                <img src="http://www.clipartkid.com/images/856/new-twitter-logo-vector-eps-free-graphics-download-C44755-clipart.png" width="27px"></a>
+                
+                <a href="https://www.instagram.com" target= "_blank">
+                <img src="https://images.seeklogo.net/2016/06/Instagram-logo.png" width="30px"></a>
+            </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
