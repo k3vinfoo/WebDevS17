@@ -1,1 +1,194 @@
+/*==================================================
+|				PROJECTS STYLE SHEET 			   |
+==================================================*/
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+}
+
+
+/*---------------BODY STYLES--------------*/
+
+
+/*-----Header Nav Styles------*/
+
+header {
+    position: relative;
+    width: 100vw;
+    line-height: 55px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: auto -2.3px;
+}
+
+
+/*.sticky-navbar {
+    position: fixed;
+}
+*/
+
+#a1 {
+    width: 25%;
+    background-color: #3498DB;
+}
+
+#a2 {
+    width: 25%;
+    background-color: #48C9B0;
+    /*background-color: #76D7C4;*/
+}
+
+#a3 {
+    width: 25%;
+    background-color: #9B59B6;
+}
+
+#a4 {
+    width: 25%;
+    background-color: #C0392B;
+}
+
+#a1 a:hover {
+    color: white;
+    background-color: #1B4F72;
+}
+
+#a2 a:hover {
+    color: white;
+    background-color: #0E6251;
+}
+
+#a3 a:hover {
+    color: white;
+    background-color: #512E5F;
+}
+
+#a4 a:hover {
+    color: white;
+    background-color: #641E16;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+/*-----End of Header Nav Styles-----*/
+
+
+/*Generic Clearfix*/
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.container {
+    background-color: #9B59B6;
+    width: 100vw;
+    height: 200vh;
+    /*font-size: 0em;*/
+    padding-top: 10vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.thumbnail {
+    width: 60%;
+    height: 20%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 50px 10%;
+    background-color: grey;
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.thumbnail:hover {
+    border: 2px solid white;
+}
+
+.thumb-info {
+    background-color: skyblue;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    height: 200px;
+    color: white;
+}
+
+.thumb-img {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    text-align: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+
+/*----Start of Footer Styles----*/
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: grey;
+    margin: 0 auto;
+    line-height: 7.5vh;
+}
+
+#links {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    /*color: #3498DB;*/
+}
+
+a:hover {
+    color: #512E5F;
+}
+
+
+/*----End of Footer Styles----*/
+
+
+/*---------------END OF BODY STYLES--------------*/

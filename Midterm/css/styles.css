@@ -1,1 +1,234 @@
+/*==================================================
+|					HOME STYLE SHEET  			   |
+==================================================*/
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica-Neue", Arial
+}
+
+
+/*-----Home Animation Styles-----*/
+
+#backdrop {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: #5D6D7E;
+    z-index: 1;
+}
+
+#slider {
+    height: 249px;
+    width: 100%;
+    background-color: #F7F9F9;
+    z-index: 2;
+    position: absolute;
+    animation-name: slide;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 248px;
+    }
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+}
+
+#background img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+
+/*-----End of Home Animation Styles-----*/
+
+
+/*-----Header Nav Styles------*/
+
+header {
+    position: relative;
+    width: 100vw;
+    /*background-color: transparent;*/
+    line-height: 55px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: auto -2.3px;
+}
+
+#a1 {
+    width: 25%;
+    background-color: #3498DB;
+}
+
+#a2 {
+    width: 25%;
+    background-color: #48C9B0;
+    /*background-color: #76D7C4;*/
+}
+
+#a3 {
+    width: 25%;
+    background-color: #9B59B6;
+}
+
+#a4 {
+    width: 25%;
+    background-color: #C0392B;
+}
+
+#a1 a:hover {
+    color: white;
+    background-color: #1B4F72;
+}
+
+#a2 a:hover {
+    color: white;
+    background-color: #0E6251;
+}
+
+#a3 a:hover {
+    color: white;
+    background-color: #512E5F;
+}
+
+#a4 a:hover {
+    color: white;
+    background-color: #641E16;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+/*-----End of Header Nav Styles-----*/
+
+
+/*-----Body Container Styles-----*/
+
+
+/*Generic Clearfix*/
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+
+
+/*
+.container {
+    background-color: skyblue;
+    width: 100vw;
+    height: 89vh;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    width: 40%;
+    height: 60%;
+    display: inline-block;
+    background-color: #999;
+    margin: 0 auto;
+}*/
+
+.container {
+    background-color: #3498DB;
+    width: 100vw;
+    height: 73.05vh;
+    margin: 0 auto;
+    /*margin-top: 1px;*/
+    font-size: 0em;
+}
+
+.thumbnail {
+    vertical-align: top;
+    width: 48%;
+    height: 50vh;
+    margin: 1%;
+    /*margin-top: 50px;*/
+    margin-top: 12vh;
+    background-color: grey;
+    display: inline-block;
+    color: white;
+    font-size: 23px;
+}
+
+.thumbnail p {
+    margin: 4%;
+}
+
+.thumbnail img {
+    /* Preserve aspect ratio */
+    width: 100%;
+    height: auto;
+}
+
+
+/*----End of Body Container Styles----*/
+
+
+/*----Start of Footer Styles----*/
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: grey;
+    margin: 0 auto;
+    line-height: 7.5vh;
+}
+
+#links {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    /*color: #3498DB;*/
+}
+
+a:hover {
+    color: #1B4F72;
+}
+
+
+/*----End of Footer Styles----*/

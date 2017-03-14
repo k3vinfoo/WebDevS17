@@ -1,1 +1,173 @@
+/*==================================================
+|				ABOUT ME STYLE SHEET 			   |
+==================================================*/
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+}
+
+
+/*---------------BODY STYLES--------------*/
+
+
+/*-----Header Nav Styles------*/
+
+header {
+    position: relative;
+    width: 100vw;
+    line-height: 55px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: auto -2.3px;
+}
+
+
+/*.sticky-navbar {
+    position: fixed;
+}
+*/
+
+#a1 {
+    width: 25%;
+    background-color: #3498DB;
+}
+
+#a2 {
+    width: 25%;
+    background-color: #48C9B0;
+    /*background-color: #76D7C4;*/
+}
+
+#a3 {
+    width: 25%;
+    background-color: #9B59B6;
+}
+
+#a4 {
+    width: 25%;
+    background-color: #C0392B;
+}
+
+#a1 a:hover {
+    color: white;
+    background-color: #1B4F72;
+}
+
+#a2 a:hover {
+    color: white;
+    background-color: #0E6251;
+}
+
+#a3 a:hover {
+    color: white;
+    background-color: #512E5F;
+}
+
+#a4 a:hover {
+    color: white;
+    background-color: #641E16;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+/*-----End of Header Nav Styles-----*/
+
+
+/*Generic Clearfix*/
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.container {
+    background-color: #48C9B0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    font-size: 0em;
+}
+
+.thumbnail {
+    vertical-align: top;
+    width: 48%;
+    height: 50vh;
+    margin: 1%;
+    margin-top: 12vh;
+    background-color: grey;
+    display: inline-block;
+    color: white;
+    font-size: 23px;
+}
+
+.thumbnail h2 {
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.thumbnail p,
+.thumbnail ul {
+    padding: 3%;
+    list-style-type: none;
+}
+
+
+/*----Start of Footer Styles----*/
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: grey;
+    margin: 0 auto;
+    line-height: 7.5vh;
+}
+
+#links {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    /*color: #3498DB;*/
+}
+
+a:hover {
+    color: #0E6251;
+}
+
+
+/*----End of Footer Styles----*/
+
+
+/*---------------END OF BODY STYLES--------------*/
