@@ -103,19 +103,25 @@ header nav ul li a {
 
 .container {
     background-color: #48C9B0;
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
+    width: 100%;
+    height: 700px;
     font-size: 0em;
+    margin: 0 auto;
+    padding-top: 125px;
+}
+
+.cont {
+    width: 1080px;
+    background-color: grey;
+    margin: 0 auto;
 }
 
 .thumbnail {
     vertical-align: top;
-    width: 48%;
-    height: 50vh;
-    margin: 1%;
-    margin-top: 12vh;
-    background-color: grey;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    background-color: #999;
     display: inline-block;
     color: white;
     font-size: 23px;
@@ -136,15 +142,21 @@ header nav ul li a {
 /*----Start of Footer Styles----*/
 
 footer {
-    width: 100vw;
-    height: 15vh;
+    width: 100%;
+    height: 110px;
     background-color: grey;
     margin: 0 auto;
-    line-height: 7.5vh;
+    line-height: 60px;
 }
 
 #links {
+    margin-top: -10px;
     text-align: center;
+}
+
+.text {
+    width: 100%;
+    height: 60px;
 }
 
 footer p {

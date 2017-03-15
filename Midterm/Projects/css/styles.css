@@ -30,12 +30,6 @@ header nav ul li {
     margin: auto -2.3px;
 }
 
-
-/*.sticky-navbar {
-    position: fixed;
-}
-*/
-
 #a1 {
     width: 25%;
     background-color: #3498DB;
@@ -103,19 +97,22 @@ header nav ul li a {
 
 .container {
     background-color: #9B59B6;
-    width: 100vw;
-    height: 200vh;
-    /*font-size: 0em;*/
-    padding-top: 10vh;
+    width: 100%;
+    /*height: 150vh;*/
+    min-height: 100%;
+    font-size: 0em;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0 auto;
     display: block;
 }
 
 .thumbnail {
-    width: 60%;
-    height: 20%;
-    margin: 0 auto;
-    margin-top: 2%;
+    /*width: 60%;*/
+    width: 60vw;
+    height: 300px;
+    margin: 2% auto;
+    /*margin-top: 2%;*/
     padding: 50px 10%;
     background-color: grey;
     display: block;
@@ -132,14 +129,14 @@ header nav ul li a {
     margin: auto;
     padding: 10px;
     width: 60%;
-    height: 200px;
+    height: 280px;
     color: white;
 }
 
 .thumb-img {
     background-color: yellow;
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 280px;
     padding: 10px;
 }
 
@@ -157,15 +154,21 @@ header nav ul li a {
 /*----Start of Footer Styles----*/
 
 footer {
-    width: 100vw;
-    height: 15vh;
+    width: 100%;
+    height: 110px;
     background-color: grey;
     margin: 0 auto;
-    line-height: 7.5vh;
+    line-height: 60px;
 }
 
 #links {
+    margin-top: -10px;
     text-align: center;
+}
+
+.text {
+    width: 100%;
+    height: 60px;
 }
 
 footer p {
