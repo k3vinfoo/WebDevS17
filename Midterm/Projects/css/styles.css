@@ -114,7 +114,7 @@ header nav ul li a {
     margin: 2% auto;
     /*margin-top: 2%;*/
     padding: 50px 10%;
-    background-color: grey;
+    /*background-color: grey;*/
     display: block;
     border: 2px solid rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease;
@@ -125,16 +125,18 @@ header nav ul li a {
 }
 
 .thumb-info {
-    background-color: skyblue;
+    /*background-color: skyblue;*/
     margin: auto;
     padding: 10px;
-    width: 60%;
+    /*width: 60%;*/
+    width: 500px;
     height: 280px;
     color: white;
+    font-size: 20px;
 }
 
 .thumb-img {
-    background-color: yellow;
+    /*background-color: yellow;*/
     height: 280px;
     width: 280px;
     padding: 10px;
@@ -150,31 +152,36 @@ header nav ul li a {
     text-align: right;
 }
 
+.thumb-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.thumb-info p a {
+    color: black;
+}
+
+.thumb-info p a:hover {
+    color: white;
+}
+
+.thumb-info a:hover {
+    color: black;
+}
+
 
 /*----Start of Footer Styles----*/
 
 footer {
     width: 100%;
     height: 110px;
-    background-color: grey;
+    background-color: #9B59B6;
     margin: 0 auto;
     line-height: 60px;
 }
 
 #links {
-    margin-top: -10px;
     text-align: center;
-}
-
-.text {
-    width: 100%;
-    height: 60px;
-}
-
-footer p {
-    text-align: center;
-    color: white;
-    font-size: 16px;
 }
 
 footer a {
