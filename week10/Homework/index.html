@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fun Times</title>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {});
+
+    function nicCage() {
+        for (var i = 0; i < 20; i++) {
+            var nick = document.createElement("img");
+            nick.setAttribute("src", "http://files.gamebanana.com/img/ico/sprays/516c32f08e03d.png");
+            nick.style.left = Math.random() * window.innerWidth + "px";
+            nick.style.animationDuration = (3 + Math.random() * 3) + "s";
+            nick.className += "aNick";
+            document.body.appendChild(nick);
+
+        }
+    }
+    </script>
+    <style>
+    .aNick {
+        position: fixed;
+        animation-name: nicRain;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    @keyframes nicRain {
+        from {
+            top: -17em;
+        }
+        to {
+            top: 100vh;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <h1>I'm a boring page right now, but I can be fun if you click that button!</h1>
+    <button id="btn" onclick="nicCage()">Click me</button>
+</body>
+
+</html>
