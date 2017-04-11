@@ -5,17 +5,25 @@
     <title>Fun Times</title>
     <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {});
+    var clicked = true;
 
     function nicCage() {
-        for (var i = 0; i < 20; i++) {
-            var nick = document.createElement("img");
-            nick.setAttribute("src", "http://files.gamebanana.com/img/ico/sprays/516c32f08e03d.png");
-            nick.style.left = Math.random() * window.innerWidth + "px";
-            nick.style.animationDuration = (3 + Math.random() * 3) + "s";
-            nick.className += "aNick";
-            document.body.appendChild(nick);
 
+        if (clicked) { //TRUE
+            for (var i = 0; i < 20; i++) {
+                var nick = document.createElement("img");
+                nick.setAttribute("src", "http://files.gamebanana.com/img/ico/sprays/516c32f08e03d.png");
+                nick.style.left = Math.random() * window.innerWidth + "px";
+                nick.style.animationDuration = (3 + Math.random() * 3) + "s";
+                nick.className += "aNick";
+                document.getElementById("cageContainer").appendChild(nick);
+            }
+        } else { //FALSE
+            document.getElementById("cageContainer").innerHTML = "";
+            console.log('here?');
         }
+        clicked = !clicked; // To Toggle.
+
     }
     </script>
     <style>
@@ -40,6 +48,8 @@
 <body>
     <h1>I'm a boring page right now, but I can be fun if you click that button!</h1>
     <button id="btn" onclick="nicCage()">Click me</button>
+    <div id="cageContainer">
+    </div>
 </body>
 
 </html>
