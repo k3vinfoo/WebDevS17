@@ -16,7 +16,7 @@ function introAnimate() {
     TweenMax.to(yoshi, 5, { x: 70, y: 900, ease: Elastic.easeOut });
     TweenMax.to(wario, 5, { x: 0, y: 190, ease: Elastic.easeOut });
     TweenMax.to(luigi, 5, { x: 10, y: 500, ease: Elastic.easeOut });
-    TweenMax.to(peach, 5, { x: -10, y: 850, ease: Elastic.easeOut });
+    TweenMax.to(peach, 5, { x: -10, y: 800, ease: Elastic.easeOut });
     TweenMax.to(toad, 5, { x: 0, y: 750, ease: Elastic.easeOut });
 }
 
