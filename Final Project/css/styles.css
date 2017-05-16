@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", Helvetica Neue;
+}
+
+#intro {
+    width: 100%;
+    display: none;
+}
+
+#bg {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    display: block;
+}
+
+#bg h1 {
+    font-family: "Lilita One", Helvetica Neue;
+    font-size: 83px;
+}
+
+#bg p {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#char1 {
+    top: -13%;
+    left: -18%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+#char2 {
+    top: -62%;
+    left: 25%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+#char3 {
+    top: -55%;
+    left: 4%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+#char4 {
+    top: -20%;
+    left: 40%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+#char5 {
+    top: -55%;
+    left: 80%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+#char6 {
+    top: -49%;
+    left: 80%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+#char7 {
+    top: -36%;
+    left: 55%;
+    position: absolute;
+    filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.6));
+}
+
+a span {
+    max-width: 0;
+    transition: max-width 1s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a:hover span {
+    max-width: 8em;
+}
+
+
+/********Game Styles*******/
+
+#game-wrap {
+    display: none;
+}
+
+#game-wrap #page-wrap h3 {
+    padding-left: 10px;
+}
+
+#game-wrap > h1 {
+    padding-left: 10px;
+}
+
+#game-wrap .progress {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    opacity: 1;
+}
+
+#memory-board {
+    width: 1155px;
+    height: 470px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+#memory-board > div {
+    background: url('../img/mario-logo.jpg') no-repeat;
+    border: grey 1px solid;
+    width: 140px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 10px 5px #666;
+}
+
+#memory-board > div >img {
+    text-align: center;
+}
+
+#myModal {
+    /*display: none;*/
+}
+
+#modal-win {}

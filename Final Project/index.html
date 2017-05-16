@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Match It</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div id="intro">
+        <div id="bg">
+            <h1>Mario Match!</h1>
+            <p>Endless classic fun, Mario style!</p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#btnModal">How To Play</button>
+            <div class="modal fade" id="btnModal" tab-index="-1" role="dialog" aria-labelledby="btnModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">X</button>
+                            <h1 class="modal-title" id="btnModalLabel">Mario Match! Instructions</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p>When you are ready to play, click on the "I'm Ready!" button.</p>
+                            <p>In the game you need to match all the cards of the same Mario characters within 30 seconds</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" data-dismiss="modal">Got it!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <a class="btn btn-primary btn-lg" data-transition="flow" href="#game-wrap" onclick="display();startTime();">I'm ready!
+            <span>Let's Play!</span></a>
+        </div>
+        <div id="intro-front">
+            <div class="pic" id="char1">
+                <img id="mar" src="img/mario.png">
+            </div>
+            <div class="pic" id="char2">
+                <img src="img/goomba.png">
+            </div>
+            <div class="pic" id="char3">
+                <img src="img/yoshi.png">
+            </div>
+            <div class="pic" id="char4">
+                <img src="img/wario.png">
+            </div>
+            <div class="pic" id="char5">
+                <img src="img/luigi.png">
+            </div>
+            <div class="pic" id="char6">
+                <img src="img/peach.png">
+            </div>
+            <div class="pic" id="char7">
+                <img src="img/toad.png">
+            </div>
+        </div>
+    </div>
+    <div id="game-wrap">
+        <div class="progress"></div>
+        <div id="page-wrap">
+            <h3>Timer</h3>
+            <div id="timer_div"></div>
+        </div>
+        <div id="memory-board">
+        </div>
+        <div class="modal fade" id="myModal" tab-index="-1" role="dialog" aria-labelledby="btnModalLabel" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">X</button>
+                        <h1 class="modal-title" id="btnModalLabel">Better Luck Next Time!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>It seems like you didn't finish matching all the cards in 30 seconds.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="#play-again" class="btn btn-default" data-dismiss="modal" onclick="setGame(); startTime();">Try Again?</button>
+                        
+                        <a href="index.html" class="btn btn-danger" role="button">Leave</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-win" tab-index="-1" role="dialog" aria-labelledby="btnModalLabel" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">X</button>
+                        <h1 class="modal-title" id="btnModalLabel">YOU DID IT!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Congratulations! You've matched all the cards!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id= "play-again" class="btn btn-default" data-dismiss="modal" onclick="setGame(); startTime();">Play Again?</button>
+                        
+                        <a href="index.html" class="btn btn-danger" role="button">Leave</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
